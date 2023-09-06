@@ -30,6 +30,8 @@ describe('capitalize', () => {
     const result = capitalize(inputString);
     expect(result).toBe(''); // The result should also be an empty string
   });
+
+  // Test 4: input must be a string string
   it('Input must be astring', () => {
     const input = 45454;
     expect(() => capitalize(input)).toThrow('Input must be a string');
